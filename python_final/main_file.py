@@ -179,14 +179,14 @@ if __name__ == '__main__':
 				while numberOfBees > 0:#use this while loop to remove the bees from the screen so we can reset them
 						da_bees.listOfBees.remove(da_bees.listOfBees[0])
 						numberOfBees = numberOfBees - 1
-						print "ah"
+						print ("ah")
 				pygame.display.update()
-				print "not"
+				print ("not")
 				#have to the death sequence based on an attribute and not sounds
 				while time.time() <= timeForBees:#or while not_the_bees.play() is playing
 					
-					print "the"
-				print " bees"
+					print ("the")
+				print (" bees")
 				N.position = [402, 416]#resets players 
 				N.lives = N.lives - 1
 				C.listOfCounters.remove(C.listOfCounters[0])#removes the life counters on the side of the screen
@@ -209,11 +209,11 @@ if __name__ == '__main__':
 			while numberOfBees > 0:#use this while loop to remove the bees from the screen so we can reset them
 					da_bees.listOfBees.remove(da_bees.listOfBees[0])
 					numberOfBees = numberOfBees - 1
-					print "ah"
+					print ("ah")
 			pygame.display.update()
 			while time.time() <= resetTime:#or while not_the_bees.play() is playing
 					
-					print "the"
+					print ("the")
 			SC.AllPossiblePositions()
 			SC.PlaceScreenPlays()
 			N.position = [400, 416]
@@ -225,7 +225,7 @@ if __name__ == '__main__':
 
 
 		if N.checkForDead() == True:
-			print "Game Over"		
+			print ("Game Over")		
 			
 			not_the_bees.stop()
 			vamp.stop()
