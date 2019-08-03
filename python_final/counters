@@ -1,0 +1,19 @@
+import pygame
+
+import cage_class
+mainScreen = pygame.display.set_mode((1100, 800), 0, 32)
+
+class counters(cage_class.Sprite):
+	def __init__(self, envi, image, position = []):
+		cage_class.Sprite.__init__(self, envi, image, position = [0,0])
+		self.Screen_play_positions = []
+		self.number_of_screen_plays_left = 70
+	def blit_screen(self):
+		cage_class.Sprite.blit_screen(self)		
+	def get_black_box(self):
+		cage_class.Sprite.get_black_box(self)
+	def AllPossiblePositions(self):
+		first_position = [35, 30]
+		HorizontalPositions = 0
+		VerticalPositions = 0
+		amountToAdd = 0

@@ -1,0 +1,4 @@
+import pygame
+screenPlay = pygame.image.load("New Piskel.png")
+improt cage_class
+mainScreen = pygame.display.set_mode((1100, 800), 0, 32)
