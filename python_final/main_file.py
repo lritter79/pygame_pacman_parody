@@ -40,7 +40,7 @@ if __name__ == '__main__':
 
 	pygame.mixer.init()
 	mainScreen.fill((0,0,0))
-	pygame.mixer.music.load("Nic_Cage_Song.wav")
+	pygame.mixer.music.load("17 Nic Cage Song.mp3")
 	pygame.key.set_repeat(30,30)
 	pygame.display.set_caption("The Wicker Pacman")
 	

@@ -93,6 +93,6 @@ if __name__ == '__main__':
 			beezus.movement()
 			beezus.checkForWall()
 			beezus.blit_screen()
-			print beezus.position
+			print (beezus.position)
 			#insert blackbox	#also: fill screen	
 			pygame.display.update()

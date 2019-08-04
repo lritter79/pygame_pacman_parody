@@ -46,7 +46,7 @@ if __name__ == '__main__':
 	#print len(ScreenPlays)
 	SC = screen_play(mainScreen, screenPlay, [0, 0])
 	SC.AllPossiblePositions()
-	print SC.Screen_play_positions
+	print (SC.Screen_play_positions)
 ### Find way to make this part into a method
 #	listOfScreenPlays = []
 #	numberOfScreenPlaysINeed = 121

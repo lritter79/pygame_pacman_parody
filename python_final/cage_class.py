@@ -46,7 +46,7 @@ class Sprite:
 					self.direction = "U"
 		for EachWall in walls:
 			self.checkForWalls(EachWall)
-			print self.hitting
+			print (self.hitting)
 				
 	def WrapAround(self):
 		if self.position[0] < -100:
@@ -66,7 +66,7 @@ class Sprite:
 		self.get_black_box()
 		otherSprite.get_black_box()
 		if self.black_box.colliderect(otherSprite.black_box) == True:
-			print "collision"
+			print("collision")
 			return True	
 			self.hitting = "T"
 
@@ -144,6 +144,6 @@ if __name__ == '__main__':
 		N.movement(pygame.event.get(), wallz)
 		N.checkForWalls(a_wall)
 		N.blit_screen()
-		print N.position
+		print (N.position)
 		
 		pygame.display.update()
